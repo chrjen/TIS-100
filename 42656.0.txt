@@ -1,0 +1,39 @@
+@0
+
+
+@1
+START:
+   MOV UP ACC
+   JEZ L
+   MOV ACC RIGHT
+   SWP
+   ADD 1
+   SAV
+   JMP START
+L: SWP
+   JEZ E
+Z: MOV RIGHT DOWN
+   SUB 1
+   JNZ Z
+E: MOV 0 DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP RIGHT
+
+@5
+MOV LEFT DOWN
+
+@6
+
+
+@7
+MOV UP DOWN
+
+@8
+

@@ -1,0 +1,46 @@
+@0
+## GRAPH?
+
+@1
+MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV UP RIGHT
+
+@9
+    MOV 17 ACC
+    SAV
+START:
+    MOV LEFT ACC
+L1: SWP
+    MOV RIGHT DOWN
+    MOV ACC DOWN
+    SUB 1
+    SWP
+    MOV 3 DOWN
+    SUB 1
+    MOV -1 DOWN
+    JNZ L1
+    JMP START
+
+@10
+MOV ACC LEFT
+ADD 1

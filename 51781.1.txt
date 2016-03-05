@@ -1,0 +1,49 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+   MOV 3 DOWN
+   MOV 0 DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV 0 RIGHT
+MOV 3 RIGHT
+
+@9
+    MOV 30 ACC
+    MOV 0 DOWN
+    MOV RIGHT DOWN
+L1: MOV UP DOWN
+    SUB 1
+    JNZ L1
+    MOV -1 DOWN
+
+    MOV 30 ACC
+    MOV 0 DOWN
+    MOV RIGHT DOWN
+L2: MOV LEFT DOWN
+    SUB 1
+    JNZ L2
+    MOV -1 DOWN
+
+@10
+   MOV ACC LEFT
+   ADD 1

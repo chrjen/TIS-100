@@ -1,0 +1,126 @@
+@0
+## 32 STEP
+
+# IMPROVES ON
+# FIRST SOLUTION
+# BY SUBTRACTING
+# IN STEPS OF 16
+# FIRST TO REACH
+# ANSWER FASTER
+
+# THROUGH TESTING
+# 32 HAS BEEN
+# FOUND TO OPTIMAL
+# FOR THE TEST
+# CASES
+
+@1
+   MOV UP ACC
+   JMP E
+S: SWP
+   ADD 16
+   SWP
+E: SUB 32
+   JLZ L
+   JMP S
+L: ADD 32
+   MOV ACC DOWN
+   SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SAV
+
+@2
+   MOV UP ACC
+   JMP E
+S: SWP
+   ADD 16
+   SWP
+E: SUB 32
+   JLZ L
+   JMP S
+L: ADD 32
+   MOV ACC DOWN
+   SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SAV
+
+@3
+
+
+@4
+   MOV UP ACC
+   SAV
+   MOV UP ACC
+   SWP
+   JMP E
+S: SWP
+   ADD 1
+   SWP
+E: SUB 2
+   JLZ L
+   JMP S
+L: ADD 2
+   MOV ACC DOWN
+   SWP
+   MOV ACC DOWN
+
+@5
+   MOV UP ACC
+   SAV
+   MOV UP ACC
+   SWP
+   JMP E
+S: SWP
+   ADD 1
+   SWP
+E: SUB 2
+   JLZ L
+   JMP S
+L: ADD 2
+   MOV ACC DOWN
+   SWP
+   MOV ACC DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV UP RIGHT
+
+@9
+START:
+   MOV LEFT ACC
+   ADD UP
+   SUB 2
+   JEZ L
+   MOV UP ACC
+   ADD LEFT
+   MOV ACC DOWN
+   JMP START
+
+L: MOV UP ACC
+   ADD LEFT
+   ADD 1
+   MOV ACC DOWN
+
+@10
+# REMAINDER TRUTH
+#      TABLE
+#
+#    A | B | E
+#    0 | 0 | 0
+#    1 | 0 | 0
+#    0 | 1 | 0
+#    1 | 1 | 1
+#
+# ONLY IN THE LAST
+# SCENARIO DO YOU
+# NEED TO CORRECT
+# THE ROUND ERROR
+# YOU DO THAT BY
+# ADDING 1 TO ANS

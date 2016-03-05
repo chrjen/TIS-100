@@ -1,0 +1,35 @@
+@0
+## ECHO
+
+@1
+MOV UP RIGHT
+
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+
+
+@10
+MOV UP DOWN
+
+@11
+

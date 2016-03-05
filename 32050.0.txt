@@ -1,0 +1,45 @@
+@0
+MOV ACC RIGHT
+MOV RIGHT ACC
+
+@1
+START:
+   MOV UP ACC
+   SAV
+   SUB LEFT
+   JGZ L
+   NEG
+L: SUB 10
+   JLZ G
+   MOV 1 DOWN
+   JMP E
+G: MOV 0 DOWN
+E: SWP
+   MOV ACC LEFT
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV UP RIGHT
+
+@9
+MOV LEFT DOWN
+
+@10
+
