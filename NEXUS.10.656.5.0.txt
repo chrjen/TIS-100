@@ -2,7 +2,12 @@
 
 
 @1
-
+S: MOV UP ACC
+   JLZ E
+   MOV ACC RIGHT
+   JMP S
+E: MOV 1 DOWN
+   MOV DOWN NIL
 
 @2
 
@@ -11,10 +16,19 @@
 
 
 @4
-
+   MOV UP RIGHT
+   MOV RIGHT UP
 
 @5
-
+   MOV LEFT NIL
+   MOV 999 RIGHT
+   MOV 999 RIGHT
+   MOV UP ACC
+   SUB RIGHT
+   JGZ E
+   ADD RIGHT
+   JMP
+E:
 
 @6
 

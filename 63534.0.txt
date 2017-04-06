@@ -1,14 +1,31 @@
 @0
-
+S: MOV UP ACC
+   JEZ E
+   MOV ACC RIGHT
+   SWP
+   ADD 1
+   SWP
+   JMP S
+E: SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SAV
+   MOV DOWN NIL
 
 @1
-
+# VIDEO ON SORTING
+# USING A STACK.
+#
+# HTTPS://WWW.YOUT
+# UBE.COM/WATCH?V=
+# JHAF7G_SO3K
 
 @2
 
 
 @3
-
+   MOV UP ACC
+   JRO 0
 
 @4
 
