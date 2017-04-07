@@ -77,7 +77,7 @@ E: SUB LEFT
 MOV UP DOWN
 
 @10
-# TRICKLE
+## TRICKLE
 
 # A B   C D
 # | |   | |
