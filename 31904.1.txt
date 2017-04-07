@@ -1,0 +1,49 @@
+@0
+
+
+@1
+START:
+   MOV UP ACC
+   JEZ E
+   MOV -1 RIGHT
+   MOV -1 DOWN
+   MOV ACC DOWN
+   JMP START
+
+E: MOV 1 RIGHT
+   MOV 1 DOWN
+
+@2
+   JRO 2
+   ADD 1
+   JRO LEFT
+   MOV ACC DOWN
+   MOV 0 ACC
+
+@3
+## JRO LOW INSTR
+
+@4
+   JMP S
+   ADD UP
+S: JRO UP
+   MOV ACC DOWN
+   MOV 0 ACC
+
+@5
+   MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+   MOV UP DOWN
+
+@9
+   MOV UP DOWN
+
+@10
+

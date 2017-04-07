@@ -9,7 +9,6 @@ S: MOV UP ACC
 E: SWP
    MOV ACC DOWN
    MOV 0 ACC
-   SAV
    MOV DOWN NIL
 
 @1

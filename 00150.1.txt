@@ -1,0 +1,49 @@
+@0
+MOV UP, DOWN
+
+
+
+
+
+
+
+
+
+
+
+## 100.000+ CYCLES
+# SOLUTION TO GET
+# STEAM ACHIEVMENT
+
+@1
+   MOV RIGHT DOWN
+
+@2
+   MOV -999 ACC
+A: ADD 1
+   JNZ A
+   MOV -999 ACC
+B: ADD 1
+   JNZ B
+   MOV -999 ACC
+C: ADD 1
+   JNZ C
+   MOV -999 ACC
+D: ADD 1
+   JNZ D
+   MOV UP LEFT
+
+@3
+MOV UP, DOWN
+
+@4
+   MOV UP DOWN
+
+@5
+MOV UP, DOWN
+
+@6
+   MOV UP RIGHT
+
+@7
+   MOV LEFT DOWN
