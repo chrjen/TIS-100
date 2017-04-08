@@ -1,0 +1,45 @@
+@0
+
+
+@1
+   MOV UP ACC
+   JEZ Z
+
+L: MOV -2 RIGHT
+   SUB 1
+   JNZ L
+
+Z: MOV 1 RIGHT #J
+
+@2
+   MOV UP ACC
+   JMP E
+
+   MOV -1 DOWN #J
+   MOV ACC DOWN
+E: JRO LEFT
+   MOV 3 DOWN #J
+
+@3
+
+
+@4
+
+
+@5
+   JMP E
+   ADD UP
+E: JRO UP
+   MOV 0 DOWN
+   JMP E
+   MOV ACC DOWN
+   MOV 0 ACC
+
+@6
+
+
+@7
+   MOV UP DOWN
+
+@8
+
