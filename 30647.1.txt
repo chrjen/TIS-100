@@ -1,0 +1,46 @@
+@0
+## NO BACKUPS
+
+@1
+S: MOV UP ACC
+   MOV ACC RIGHT
+   MOV ACC RIGHT
+   MOV ACC RIGHT
+
+@2
+S: MOV UP ACC
+   SUB LEFT
+   JGZ G
+   ADD LEFT
+   MOV ACC DOWN
+   MOV LEFT DOWN
+   JMP S
+G: ADD LEFT
+   MOV LEFT DOWN
+   MOV ACC DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+   MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+   MOV UP DOWN
+   MOV UP DOWN
+   MOV 0 DOWN
+
+@10
+
