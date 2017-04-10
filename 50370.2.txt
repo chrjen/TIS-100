@@ -1,0 +1,45 @@
+@0
+## NO-SYNC
+
+# BUILDS ON THE
+# IMAGE TEST
+# PATTERN 2'S
+# SOLUTION TO
+# MAKE A FASTER
+# SOLUTION
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+   MOV 3 DOWN
+
+@6
+
+
+@7
+   MOV ACC RIGHT
+   ADD 1
+
+@8
+   MOV 29 ACC
+   MOV -1 RIGHT
+   MOV 0 RIGHT
+   MOV LEFT RIGHT
+L: SUB 1
+   JNZ L
+
+@9
+   MOV ANY DOWN
+
+@10
+
