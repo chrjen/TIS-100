@@ -23,11 +23,14 @@
 
 
 @8
+
+
+@9
    MOV -10 RIGHT
    MOV -10 RIGHT
    MOV 1 RIGHT
 
-@9
+@10
    MOV 0 DOWN
    MOV ACC DOWN
    MOV 3 DOWN
@@ -44,5 +47,5 @@
    MOV -1 DOWN
    ADD 1
 
-@10
+@11
 
