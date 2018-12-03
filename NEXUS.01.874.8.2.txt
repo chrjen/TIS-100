@@ -1,0 +1,74 @@
+@0
+   MOV RIGHT ACC
+   MOV ACC DOWN
+   MOV RIGHT DOWN
+L: JRO DOWN
+   ADD DOWN
+   JMP L
+   MOV ACC RIGHT
+
+@1
+   MOV UP ACC
+   MOV ACC LEFT
+   MOV ACC RIGHT
+   MOV RIGHT LEFT
+   MOV LEFT ACC
+   ADD RIGHT
+   MOV ACC DOWN
+
+@2
+S: MOV LEFT ACC
+L: SUB 2
+   SWP
+   ADD 1
+   SWP
+   JGZ L
+   JEZ Z
+   MOV 0 ACC
+   SWP
+   MOV ACC LEFT
+   MOV 0 LEFT
+   JMP S
+Z: SWP
+   MOV ACC LEFT
+   MOV ACC LEFT
+
+@3
+   MOV UP ACC
+   SWP
+   MOV UP ACC
+   SUB 1
+L: JEZ E
+   MOV 1 UP
+   SUB 1
+   SWP
+   MOV ACC UP
+   SWP
+   JMP L
+E: MOV 3 UP
+
+@4
+   MOV UP DOWN
+
+@5
+
+
+@6
+## N*(N/2)+(N/2)
+
+# USES DIRECT
+# FORMULA
+
+# EVEN CASE:
+# N*(N/2)+(N/2)
+
+# ODD CASE:
+# N*(N/2)+N
+
+@7
+
+
+@8
+   MOV UP DOWN
+
+@9
