@@ -1,0 +1,75 @@
+@0
+## NO MEMORY
+
+# ABUSES THE FACT
+# THAT NO SEQ IS
+# LONGER THAN 5.
+
+# PADS THE SEQ
+# WITH -1 UNTIL
+# ITS LENGTH IS
+# 5 ELEMENTS.
+
+# PIPELINE IS
+# HARD-CODED FOR
+# REV 5 ELEMENT
+# SEQUENCES.
+
+@1
+   MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV 1 ACC
+   SAV
+
+L: MOV UP ACC
+   JEZ E
+   MOV -1 RIGHT
+   MOV ACC RIGHT
+   SWP
+   ADD 1
+   SAV
+   JMP L
+
+E: SWP
+   MOV ACC RIGHT
+
+@5
+   JMP S
+
+   MOV LEFT DOWN
+S: JRO LEFT
+   MOV -1 DOWN
+   MOV -1 DOWN
+   MOV -1 DOWN
+   MOV -1 DOWN
+   MOV -1 DOWN
+   NOP
+
+@6
+
+
+@7
+    MOV 5 ACC
+L1: MOV UP LEFT
+    SUB 1
+    JNZ L1
+
+    MOV 5 ACC
+L2: SAV
+    MOV LEFT ACC
+    JLZ N
+    MOV ACC DOWN
+N:  SWP
+    SUB 1
+    JNZ L2
+
+    MOV 0 DOWN
+
+@8
