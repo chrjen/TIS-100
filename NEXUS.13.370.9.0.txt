@@ -8,54 +8,96 @@ S: SUB 90
 E: JEZ L
    JMP S
 L: SWP
+   ADD ACC
+   ADD 1
    MOV ACC DOWN
    MOV 0 ACC
    SAV
 
 @1
-MOV UP LEFT
-MOV UP NIL
+   MOV UP LEFT
+   MOV UP RIGHT
+   MOV DOWN RIGHT
 
 @2
-
+   MOV LEFT ACC
+   SUB 1
+   SWP
+   MOV LEFT ACC
+   SWP
+L: SWP
+   MOV ACC DOWN
+   SWP
+   SUB 1
+   JNZ L
 
 @3
 
 
 @4
-MOV UP RIGHT
-
-
-
-
-
-# CURRENT PROGRESS
+   MOV UP RIGHT
 
 # TURNS THE ANGLES
 # INTO THE VALUES
 #
-# 0   -> 0
-# 90  -> 1
-# 180 -> 2
-# 270 -> 3
+# 0   -> 1
+# 90  -> 3
+# 180 -> 5
+# 270 -> 7
 
 @5
-MOV LEFT DOWN
+J: JRO LEFT
+   # 0 DEGREES
+   MOV 1 UP
+   JMP J
+
+   # 90 DEGREES
+   MOV 7 UP
+   JMP J
+
+   # 180 DEGREES
+   MOV 3 UP
+   JMP J
+
+   #270 DEGREES
+   MOV 5 UP
 
 @6
+# X-VALUE
+S: MOV ACC DOWN
+   MOV 5 RIGHT
+   MOV RIGHT DOWN
+   JRO UP
+   ADD 1 # X++
+   JMP S
 
+   SUB 1 # X--
+   JMP S
+
+   MOV 1 RIGHT
+   JMP S
+
+   MOV 3 RIGHT
 
 @7
+# Y-VALUE
+J: JRO LEFT
 
+   ADD 1 # Y++
+   JMP J
+
+   SUB 1 # Y--
+   JMP J
+
+   MOV ACC LEFT
 
 @8
-MOV 0 RIGHT
-MOV 0 RIGHT
-MOV UP RIGHT
-JRO -1
+
 
 @9
-MOV LEFT DOWN
+   MOV UP DOWN
+   MOV UP DOWN
+   MOV 3 DOWN
+   MOV -1 DOWN
 
 @10
-
