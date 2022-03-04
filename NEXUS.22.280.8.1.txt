@@ -1,0 +1,70 @@
+@0
+## T20 P<->Q
+
+# INSTRUCTIONS
+# STQ - STORE Q
+# STP - STORE P
+# SWP - SWAP P & Q
+# ADD - P = P + Q
+# PRT - OUTPUT P
+
+@1
+S: MOV UP ACC
+   ADD ACC
+   ADD 1
+# INSTRUCTION
+# DECODER TABLE
+   JRO ACC
+   MOV 4 DOWN #STP
+   JMP S
+   MOV 1 DOWN #STQ
+   JMP S
+   MOV 13 DOWN#SWP
+   JMP S
+   MOV 6 DOWN #ADD
+   JMP S
+   MOV 11 DOWN#PRT
+
+@2
+   MOV UP DOWN
+
+@3
+
+
+@4
+   MOV RIGHT RIGHT
+
+@5
+# INSTRUCTIONS
+J:   JRO UP
+STQ: SWP
+     MOV RIGHT ACC
+     JMP SWP
+STP: MOV RIGHT ACC
+     JMP J
+ADD: SWP
+     MOV ACC LEFT
+     SWP
+     ADD LEFT
+     JMP J
+PRT: MOV ACC DOWN
+     JMP J
+SWP: SWP
+
+@6
+   MOV UP LEFT
+
+# <----
+# P SAVED IN ACC
+# Q SAVED IN BAK
+
+@7
+
+
+@8
+
+
+@9
+   MOV UP DOWN
+
+@10
